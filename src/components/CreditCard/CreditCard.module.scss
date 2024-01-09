@@ -1,0 +1,87 @@
+.creditCard {
+  background-image: url("../../assets/images/xeppt-cart.png");
+  background-repeat: no-repeat;
+  object-position: center;
+  object-fit: fill;
+  position: relative;
+  width: 312px;
+  height: 196px;
+  color: #fff;
+  padding: 19px 0 0 22px;
+
+  & h1 {
+    color: #f5f5f5;
+    line-height: 37px;
+  }
+
+  & .cardStatus {
+    color: #be8317;
+    background: #fdf1dc;
+    border-radius: 20px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 4px 16px;
+    margin-bottom: 23px;
+    max-width: 81px;
+  }
+
+  & p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  & .cardText {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .creditCard {
+    width: 280px;
+    height: 176px;
+    padding: 16px 0 0 16px;
+    background-size: contain;
+
+    & h1 {
+      line-height: 30px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    & p {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    & .cardText {
+      margin-bottom: 20px;
+    }
+  }
+
+  .cardStatus {
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 670px) {
+  .creditCard {
+    width: 256px;
+    height: 160px;
+
+    & .cardStatus {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 15px;
+      margin-bottom: 16px;
+      max-width: 73px;
+    }
+
+    & .cardText {
+      margin-bottom: 16px;
+    }
+  }
+}

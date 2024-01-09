@@ -1,0 +1,27 @@
+.root {
+  text-align: center;
+}
+
+.content {
+  padding: 160px 0 263px 0;
+}
+
+.subtitle {
+  margin: 24px 0 40px 0;
+}
+
+.desktop {
+  & a {
+    color: #0f9d58;
+  }
+}
+
+@media (max-width: 450px) {
+  .content {
+    padding: 60px 0 80px 0;
+  }
+
+  .subtitle {
+    margin: 8px 0 10px 0;
+  }
+}

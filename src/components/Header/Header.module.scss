@@ -1,0 +1,182 @@
+.header {
+  background: #3d3d3d;
+  color: #f5cc82;
+  padding: 44px 0;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  & h3 {
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #ddaa4e;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  & a:hover {
+    color: #ddaa4e;
+  }
+}
+
+.activeLink {
+  background: #282828;
+
+  border-radius: 30px;
+}
+
+.logo {
+  margin-right: 114px;
+}
+
+.navItem {
+  padding: 16px 32px;
+}
+.navItem:nth-child(2) {
+  margin-right: 16px;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  & h3 {
+    margin-right: 18px;
+  }
+
+  & .userMenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+  }
+}
+
+.lightBg {
+  padding: 8px;
+  background: #fdf1dc;
+  border-radius: 20px;
+  color: #353535;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background: #f2dcb6;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header {
+    padding: 24px 0;
+  }
+  .logo {
+    margin-right: 46px;
+  }
+
+  .navItem {
+    padding: 8px 24px;
+  }
+}
+
+@media (max-width: 920px) {
+  .username {
+    & h3 {
+      display: none;
+    }
+
+    & .userMenu {
+      display: block;
+      border-radius: 10px;
+      border: 1px solid #f5cc82;
+      background: #fff8ec;
+      width: 200px;
+      padding: 5px 10px;
+      color: #000;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .logo {
+    margin-right: 12px;
+
+    & img {
+      width: 100px;
+      height: 35px;
+    }
+  }
+
+  .navItem:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 670px) {
+  .header {
+    padding: 19px 0 18px 0;
+  }
+  .navItem {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    gap: 8px;
+
+    & .initials,
+    .username {
+      display: none;
+    }
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobMenu {
+    border-radius: 10px;
+    border: 1px solid #e1dcd0;
+    background: #f8f6f1;
+    width: 200px;
+    padding: 5px 10px;
+    color: #282828;
+    position: absolute;
+    left: 15px;
+    top: 60px;
+
+    & a {
+      text-decoration: underline;
+    }
+
+    & h3 {
+      margin-top: 20px;
+    }
+  }
+}

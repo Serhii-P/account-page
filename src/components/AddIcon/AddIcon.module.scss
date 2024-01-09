@@ -1,0 +1,20 @@
+.wrapper {
+  border-radius: 20px;
+  background: #3d3d3d;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  & img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background: #505050;
+
+    & img {
+      transform: rotate(90deg);
+    }
+  }
+}
